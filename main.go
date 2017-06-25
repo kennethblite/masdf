@@ -76,7 +76,7 @@ func main(){
 		priority_branch[i].Sum = priority_branch[i].Sum/summed
 	}
 	heap.Init(&priority_branch)
-	fmt.Println(priority_branch)
+	//fmt.Println(priority_branch)
 	for len(priority_branch) > nodesize{
 		newnode := make([]*Node, 0, nodesize)
 		size := 0.0
@@ -89,11 +89,12 @@ func main(){
 		heap.Push(&priority_branch,insert_node)
 		sort.Sort(&priority_branch)
 	}
-	fmt.Println(summed)
-	//getChar(priority_branch)
-	printmapping(priority_branch, func(n Node) bool {
+	//fmt.Println(summed)
+	getChar(priority_branch)
+	/*printmapping(priority_branch, func(n Node) bool {
 		return n.Char == ""
 		}, "")
+	*/
 }
 
 func printmapping(n NodeTree, f func(Node) bool, prefix string) {
@@ -101,7 +102,7 @@ func printmapping(n NodeTree, f func(Node) bool, prefix string) {
 		if f(*v){
 			printmapping(v.Next, f, prefix+invkeymap[i])
 		}else{
-			fmt.Println(prefix+invkeymap[i] + ": " + v.Char)
+			fmt.Println(v.Char + " :"+prefix+invkeymap[i])
 		}
 	}
 }
@@ -111,24 +112,30 @@ func getChar(n NodeTree){
 	exec.Command("stty", "-F", "/dev/tty", "cbreak", "min", "1").Run()
 	exec.Command("stty", "-F", "/dev/tty", "-echo").Run()
 	defer exec.Command("stty", "-F", "/dev/tty", "echo").Run()
+	var lastbyte byte = 0
 	var b []byte = make([]byte, 1)
 	for {
 		os.Stdin.Read(b)
-		fmt.Println("I got the byte",b,"("+string(b)+")")
+		//fmt.Println("I got the byte",b,"("+string(b)+")")
 		if keymap[b[0]] != 0{
 			input := keymap[b[0]] - 1
 			nodeindex := cur_node[input]
-			fmt.Println(nodeindex)
+			//fmt.Println(nodeindex)
 			if nodeindex.Char != "" {
-				fmt.Println(nodeindex.Char)
+				fmt.Print(nodeindex.Char)
 				cur_node = n
 			}else {
 				cur_node = cur_node[input].Next
 			}
 		}
 		if b[0] == 97 {
-			break
+			if lastbyte == 97 {
+				break
+			}else{
+				cur_node = n
+			}
 		}
+		lastbyte = b[0]
 	}
 
 }
