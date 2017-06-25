@@ -7,17 +7,21 @@ import (
 	"os"
 	"os/exec"
 	"log"
-	"github.com/davecgh/go-spew/spew"
 	"container/heap"
 	"sort"
 )
 
 const nodesize = 4
 
+var keymap = map[byte]int{
+		32:1, 115:2, 100:3, 102:4}
+var invkeymap = map[int]string{
+		1:"s", 2:"d", 3:"f", 0:"<space>"}
+
 type Node struct{
 	Sum float64
-	char string
-	Next []*Node
+	Char string
+	Next NodeTree
 }
 
 
@@ -85,14 +89,25 @@ func main(){
 		heap.Push(&priority_branch,insert_node)
 		sort.Sort(&priority_branch)
 	}
-	fmt.Println(spew.Sdump(priority_branch))
 	fmt.Println(summed)
 	//getChar(priority_branch)
+	printmapping(priority_branch, func(n Node) bool {
+		return n.Char == ""
+		}, "")
+}
+
+func printmapping(n NodeTree, f func(Node) bool, prefix string) {
+	for i, v := range n {
+		if f(*v){
+			printmapping(v.Next, f, prefix+invkeymap[i])
+		}else{
+			fmt.Println(prefix+invkeymap[i] + ": " + v.Char)
+		}
+	}
 }
 
 func getChar(n NodeTree){
-	keymap := map[byte]int{
-		97:1, 115:2, 100:3, 102:4}
+	cur_node := n
 	exec.Command("stty", "-F", "/dev/tty", "cbreak", "min", "1").Run()
 	exec.Command("stty", "-F", "/dev/tty", "-echo").Run()
 	defer exec.Command("stty", "-F", "/dev/tty", "echo").Run()
@@ -101,7 +116,18 @@ func getChar(n NodeTree){
 		os.Stdin.Read(b)
 		fmt.Println("I got the byte",b,"("+string(b)+")")
 		if keymap[b[0]] != 0{
-			fmt.Println(n[keymap[b[0]]])
+			input := keymap[b[0]] - 1
+			nodeindex := cur_node[input]
+			fmt.Println(nodeindex)
+			if nodeindex.Char != "" {
+				fmt.Println(nodeindex.Char)
+				cur_node = n
+			}else {
+				cur_node = cur_node[input].Next
+			}
+		}
+		if b[0] == 97 {
+			break
 		}
 	}
 
