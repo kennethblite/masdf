@@ -54,7 +54,7 @@ func FrequencyFile(filename string) map[string]float64{
 }
 
 func main(){
-	objmap := FrequencyFile("res/freq.json")
+	objmap := FrequencyFile("res/non-numeral.json")
 	//tree := maptoNodeArray(objmap)
 	priority_branch := make(NodeTree, len(objmap))
 	i := 0
@@ -67,6 +67,9 @@ func main(){
 		}
 		i++
 		summed+=value
+	}
+	for i := range priority_branch{
+		priority_branch[i].Sum = priority_branch[i].Sum/summed
 	}
 	heap.Init(&priority_branch)
 	fmt.Println(priority_branch)
@@ -84,7 +87,7 @@ func main(){
 	}
 	fmt.Println(spew.Sdump(priority_branch))
 	fmt.Println(summed)
-	getChar(priority_branch)
+	//getChar(priority_branch)
 }
 
 func getChar(n NodeTree){

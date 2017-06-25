@@ -1,0 +1,445 @@
+[0xc8200108d0 0xc820010720 0xc820011110 0xc820010600 0xc8200109c0 0xc820010f30 0xc820010b70 0xc820010ba0 0xc820010900 0xc820010780 0xc820010e40 0xc820010ea0 0xc820010f60 0xc820010ae0 0xc820011140 0xc820010bd0 0xc820010c30 0xc820010750 0xc820010930 0xc820010960 0xc820010d80 0xc820010de0 0xc8200109f0 0xc820010ed0 0xc820010a50 0xc820010f90 0xc820010fc0 0xc820011020 0xc820010b10 0xc820010b40 0xc820010630 0xc8200111a0 0xc8200105d0 0xc820010c00 0xc820010660 0xc820010c60 0xc820010c90 0xc820010cc0 0xc820010cf0 0xc820010d20 0xc820010d50 0xc820010990 0xc820010db0 0xc8200107b0 0xc820010e10 0xc820010690 0xc820010e70 0xc820010a20 0xc8200106c0 0xc820010f00 0xc8200107e0 0xc820010a80 0xc820010810 0xc820010ab0 0xc820010ff0 0xc820010840 0xc820011050 0xc820011080 0xc8200110b0 0xc8200110e0 0xc820010870 0xc8200106f0 0xc820011170 0xc8200108a0]
+(main.NodeTree) (len=4 cap=64) {
+ (*main.Node)(0xc820011560)({
+  Sum: (float64) 0.3940993003286362,
+  char: (string) "",
+  Next: ([]*main.Node) (len=4 cap=4) {
+   (*main.Node)(0xc820010600)({
+    Sum: (float64) 0.07086802919438909,
+    char: (string) (len=1) "t",
+    Next: ([]*main.Node) <nil>
+   }),
+   (*main.Node)(0xc8200114a0)({
+    Sum: (float64) 0.09238049673279738,
+    char: (string) "",
+    Next: ([]*main.Node) (len=4 cap=4) {
+     (*main.Node)(0xc820010f90)({
+      Sum: (float64) 0.019660356901874575,
+      char: (string) (len=1) "m",
+      Next: ([]*main.Node) <nil>
+     }),
+     (*main.Node)(0xc8200109f0)({
+      Sum: (float64) 0.021896953667501613,
+      char: (string) (len=1) "u",
+      Next: ([]*main.Node) <nil>
+     }),
+     (*main.Node)(0xc820010ba0)({
+      Sum: (float64) 0.023586105567362913,
+      char: (string) (len=1) "c",
+      Next: ([]*main.Node) <nil>
+     }),
+     (*main.Node)(0xc8200113e0)({
+      Sum: (float64) 0.02723708059605829,
+      char: (string) "",
+      Next: ([]*main.Node) (len=4 cap=4) {
+       (*main.Node)(0xc820010ed0)({
+        Sum: (float64) 0.005940917626433357,
+        char: (string) (len=1) "k",
+        Next: ([]*main.Node) <nil>
+       }),
+       (*main.Node)(0xc820010750)({
+        Sum: (float64) 0.0066391825900360855,
+        char: (string) (len=6) "delete",
+        Next: ([]*main.Node) <nil>
+       }),
+       (*main.Node)(0xc820010c30)({
+        Sum: (float64) 0.006696700041874431,
+        char: (string) (len=7) "numeral",
+        Next: ([]*main.Node) <nil>
+       }),
+       (*main.Node)(0xc820011350)({
+        Sum: (float64) 0.007960280337714416,
+        char: (string) "",
+        Next: ([]*main.Node) (len=4 cap=4) {
+         (*main.Node)(0xc820010f00)({
+          Sum: (float64) 0.001894169858241612,
+          char: (string) (len=1) ";",
+          Next: ([]*main.Node) <nil>
+         }),
+         (*main.Node)(0xc820011290)({
+          Sum: (float64) 0.001995417392739662,
+          char: (string) "",
+          Next: ([]*main.Node) (len=4 cap=4) {
+           (*main.Node)(0xc820010e10)({
+            Sum: (float64) 0.0004272313996688221,
+            char: (string) (len=1) "{",
+            Next: ([]*main.Node) <nil>
+           }),
+           (*main.Node)(0xc820010d20)({
+            Sum: (float64) 0.0004847709821158015,
+            char: (string) (len=1) ">",
+            Next: ([]*main.Node) <nil>
+           }),
+           (*main.Node)(0xc820010ab0)({
+            Sum: (float64) 0.0005228466942696585,
+            char: (string) (len=1) "$",
+            Next: ([]*main.Node) <nil>
+           }),
+           (*main.Node)(0xc820010db0)({
+            Sum: (float64) 0.0005605683166853801,
+            char: (string) (len=1) "?",
+            Next: ([]*main.Node) <nil>
+           })
+          }
+         }),
+         (*main.Node)(0xc820010b10)({
+          Sum: (float64) 0.0020310476726395224,
+          char: (string) (len=1) "(",
+          Next: ([]*main.Node) <nil>
+         }),
+         (*main.Node)(0xc820010660)({
+          Sum: (float64) 0.0020396454140936193,
+          char: (string) (len=1) ")",
+          Next: ([]*main.Node) <nil>
+         })
+        }
+       })
+      }
+     })
+    }
+   }),
+   (*main.Node)(0xc820010720)({
+    Sum: (float64) 0.09311394936412731,
+    char: (string) (len=1) "e",
+    Next: ([]*main.Node) <nil>
+   }),
+   (*main.Node)(0xc8200114d0)({
+    Sum: (float64) 0.13773682503732243,
+    char: (string) "",
+    Next: ([]*main.Node) (len=4 cap=4) {
+     (*main.Node)(0xc820010e40)({
+      Sum: (float64) 0.029536295918813685,
+      char: (string) (len=1) "d",
+      Next: ([]*main.Node) <nil>
+     }),
+     (*main.Node)(0xc820010ae0)({
+      Sum: (float64) 0.03199520571346808,
+      char: (string) (len=1) "l",
+      Next: ([]*main.Node) <nil>
+     }),
+     (*main.Node)(0xc820011410)({
+      Sum: (float64) 0.03765876042189836,
+      char: (string) "",
+      Next: ([]*main.Node) (len=4 cap=4) {
+       (*main.Node)(0xc820010a80)({
+        Sum: (float64) 0.008157065709683085,
+        char: (string) (len=1) "v",
+        Next: ([]*main.Node) <nil>
+       }),
+       (*main.Node)(0xc820010a50)({
+        Sum: (float64) 0.009343155679393032,
+        char: (string) (len=1) ".",
+        Next: ([]*main.Node) <nil>
+       }),
+       (*main.Node)(0xc820011380)({
+        Sum: (float64) 0.009477233971798811,
+        char: (string) "",
+        Next: ([]*main.Node) (len=4 cap=4) {
+         (*main.Node)(0xc820011050)({
+          Sum: (float64) 0.002096720253759296,
+          char: (string) (len=1) "x",
+          Next: ([]*main.Node) <nil>
+         }),
+         (*main.Node)(0xc820010810)({
+          Sum: (float64) 0.002375422073584694,
+          char: (string) (len=1) "_",
+          Next: ([]*main.Node) <nil>
+         }),
+         (*main.Node)(0xc820010c60)({
+          Sum: (float64) 0.0024363697697612255,
+          char: (string) (len=1) "\"",
+          Next: ([]*main.Node) <nil>
+         }),
+         (*main.Node)(0xc820011020)({
+          Sum: (float64) 0.002568721874693595,
+          char: (string) (len=1) "-",
+          Next: ([]*main.Node) <nil>
+         })
+        }
+       }),
+       (*main.Node)(0xc820010ea0)({
+        Sum: (float64) 0.010681305061023438,
+        char: (string) (len=1) ",",
+        Next: ([]*main.Node) <nil>
+       })
+      }
+     }),
+     (*main.Node)(0xc820010f60)({
+      Sum: (float64) 0.03854656298314231,
+      char: (string) (len=1) "h",
+      Next: ([]*main.Node) <nil>
+     })
+    }
+   })
+  }
+ }),
+ (*main.Node)(0xc820011530)({
+  Sum: (float64) 0.23848114269096096,
+  char: (string) "",
+  Next: ([]*main.Node) (len=4 cap=4) {
+   (*main.Node)(0xc820010b70)({
+    Sum: (float64) 0.05619980646561444,
+    char: (string) (len=1) "i",
+    Next: ([]*main.Node) <nil>
+   }),
+   (*main.Node)(0xc8200109c0)({
+    Sum: (float64) 0.0570018197224908,
+    char: (string) (len=1) "o",
+    Next: ([]*main.Node) <nil>
+   }),
+   (*main.Node)(0xc820011110)({
+    Sum: (float64) 0.061732270513804456,
+    char: (string) (len=1) "a",
+    Next: ([]*main.Node) <nil>
+   }),
+   (*main.Node)(0xc820011470)({
+    Sum: (float64) 0.06354724598905126,
+    char: (string) "",
+    Next: ([]*main.Node) (len=4 cap=4) {
+     (*main.Node)(0xc8200113b0)({
+      Sum: (float64) 0.01491744657790028,
+      char: (string) "",
+      Next: ([]*main.Node) (len=4 cap=4) {
+       (*main.Node)(0xc8200112c0)({
+        Sum: (float64) 0.0027765172244574076,
+        char: (string) "",
+        Next: ([]*main.Node) (len=4 cap=4) {
+         (*main.Node)(0xc8200107b0)({
+          Sum: (float64) 0.0005926023726823042,
+          char: (string) (len=1) "!",
+          Next: ([]*main.Node) <nil>
+         }),
+         (*main.Node)(0xc820010690)({
+          Sum: (float64) 0.0006804387583484817,
+          char: (string) (len=1) "*",
+          Next: ([]*main.Node) <nil>
+         }),
+         (*main.Node)(0xc820011230)({
+          Sum: (float64) 0.0007509247468460315,
+          char: (string) "",
+          Next: ([]*main.Node) (len=4 cap=4) {
+           (*main.Node)(0xc8200107e0)({
+            Sum: (float64) 0.00015134016713987255,
+            char: (string) (len=1) "%",
+            Next: ([]*main.Node) <nil>
+           }),
+           (*main.Node)(0xc8200110e0)({
+            Sum: (float64) 0.00019024577711748402,
+            char: (string) (len=1) "&",
+            Next: ([]*main.Node) <nil>
+           }),
+           (*main.Node)(0xc8200105d0)({
+            Sum: (float64) 0.00019801362074782625,
+            char: (string) (len=1) "|",
+            Next: ([]*main.Node) <nil>
+           }),
+           (*main.Node)(0xc820011200)({
+            Sum: (float64) 0.00021132518184084859,
+            char: (string) "",
+            Next: ([]*main.Node) (len=4 cap=4) {
+             (*main.Node)(0xc820010c90)({
+              Sum: (float64) 2.4564975583133515e-05,
+              char: (string) (len=1) "~",
+              Next: ([]*main.Node) <nil>
+             }),
+             (*main.Node)(0xc820010840)({
+              Sum: (float64) 2.5118240798969854e-05,
+              char: (string) (len=1) "`",
+              Next: ([]*main.Node) <nil>
+             }),
+             (*main.Node)(0xc820010c00)({
+              Sum: (float64) 3.643804711498138e-05,
+              char: (string) (len=1) "^",
+              Next: ([]*main.Node) <nil>
+             }),
+             (*main.Node)(0xc820010ff0)({
+              Sum: (float64) 0.00012520391834376383,
+              char: (string) (len=1) "@",
+              Next: ([]*main.Node) <nil>
+             })
+            }
+           })
+          }
+         }),
+         (*main.Node)(0xc820010990)({
+          Sum: (float64) 0.0007525513465805902,
+          char: (string) (len=1) "/",
+          Next: ([]*main.Node) <nil>
+         })
+        }
+       }),
+       (*main.Node)(0xc8200111d0)({
+        Sum: (float64) 0.0028624503777811084,
+        char: (string) "",
+        Next: ([]*main.Node) (len=4 cap=4) {
+         (*main.Node)(0xc8200108a0)({
+          Sum: (float64) 0.00016414272423432547,
+          char: (string) (len=1) "<",
+          Next: ([]*main.Node) <nil>
+         }),
+         (*main.Node)(0xc820011170)({
+          Sum: (float64) 0.0023734745800249504,
+          char: (string) (len=1) "'",
+          Next: ([]*main.Node) <nil>
+         }),
+         (*main.Node)(0xc8200106f0)({
+          Sum: (float64) 0.00011032108403776628,
+          char: (string) (len=1) "#",
+          Next: ([]*main.Node) <nil>
+         }),
+         (*main.Node)(0xc820010870)({
+          Sum: (float64) 0.0002145119894840659,
+          char: (string) (len=1) "+",
+          Next: ([]*main.Node) <nil>
+         })
+        }
+       }),
+       (*main.Node)(0xc8200112f0)({
+        Sum: (float64) 0.003783714419278832,
+        char: (string) "",
+        Next: ([]*main.Node) (len=4 cap=4) {
+         (*main.Node)(0xc820010cf0)({
+          Sum: (float64) 0.0007720594780909796,
+          char: (string) (len=1) "z",
+          Next: ([]*main.Node) <nil>
+         }),
+         (*main.Node)(0xc820011080)({
+          Sum: (float64) 0.0009591627087825132,
+          char: (string) (len=1) ":",
+          Next: ([]*main.Node) <nil>
+         }),
+         (*main.Node)(0xc820010960)({
+          Sum: (float64) 0.001003844407613456,
+          char: (string) (len=1) "=",
+          Next: ([]*main.Node) <nil>
+         }),
+         (*main.Node)(0xc820010de0)({
+          Sum: (float64) 0.001048647824791883,
+          char: (string) (len=1) "q",
+          Next: ([]*main.Node) <nil>
+         })
+        }
+       }),
+       (*main.Node)(0xc820011320)({
+        Sum: (float64) 0.005494764556382932,
+        char: (string) "",
+        Next: ([]*main.Node) (len=4 cap=4) {
+         (*main.Node)(0xc820010fc0)({
+          Sum: (float64) 0.001217183474839949,
+          char: (string) (len=10) "shiftmodes",
+          Next: ([]*main.Node) <nil>
+         }),
+         (*main.Node)(0xc820010b40)({
+          Sum: (float64) 0.0012422574544216519,
+          char: (string) (len=1) "j",
+          Next: ([]*main.Node) <nil>
+         }),
+         (*main.Node)(0xc820011260)({
+          Sum: (float64) 0.0014173880258424871,
+          char: (string) "",
+          Next: ([]*main.Node) (len=4 cap=4) {
+           (*main.Node)(0xc820010a20)({
+            Sum: (float64) 0.0002584744435344215,
+            char: (string) (len=1) "\\",
+            Next: ([]*main.Node) <nil>
+           }),
+           (*main.Node)(0xc8200110b0)({
+            Sum: (float64) 0.0003660402667973228,
+            char: (string) (len=1) "]",
+            Next: ([]*main.Node) <nil>
+           }),
+           (*main.Node)(0xc8200106c0)({
+            Sum: (float64) 0.00036709147070741185,
+            char: (string) (len=1) "[",
+            Next: ([]*main.Node) <nil>
+           }),
+           (*main.Node)(0xc820010d50)({
+            Sum: (float64) 0.0004257818448033309,
+            char: (string) (len=1) "}",
+            Next: ([]*main.Node) <nil>
+           })
+          }
+         }),
+         (*main.Node)(0xc8200111a0)({
+          Sum: (float64) 0.0016179356012788438,
+          char: (string) (len=1) "\t",
+          Next: ([]*main.Node) <nil>
+         })
+        }
+       })
+      }
+     }),
+     (*main.Node)(0xc820010e70)({
+      Sum: (float64) 0.0156482546014985,
+      char: (string) (len=1) "p",
+      Next: ([]*main.Node) <nil>
+     }),
+     (*main.Node)(0xc820010930)({
+      Sum: (float64) 0.0160095810486569,
+      char: (string) (len=1) "g",
+      Next: ([]*main.Node) <nil>
+     }),
+     (*main.Node)(0xc820010630)({
+      Sum: (float64) 0.01697196376099558,
+      char: (string) (len=1) "f",
+      Next: ([]*main.Node) <nil>
+     })
+    }
+   })
+  }
+ }),
+ (*main.Node)(0xc820011500)({
+  Sum: (float64) 0.20461773738848263,
+  char: (string) "",
+  Next: ([]*main.Node) (len=4 cap=4) {
+   (*main.Node)(0xc820011140)({
+    Sum: (float64) 0.0465552540272424,
+    char: (string) (len=1) "r",
+    Next: ([]*main.Node) <nil>
+   }),
+   (*main.Node)(0xc820010900)({
+    Sum: (float64) 0.050962476214160154,
+    char: (string) (len=1) "s",
+    Next: ([]*main.Node) <nil>
+   }),
+   (*main.Node)(0xc820010f30)({
+    Sum: (float64) 0.05298773673264203,
+    char: (string) (len=1) "n",
+    Next: ([]*main.Node) <nil>
+   }),
+   (*main.Node)(0xc820011440)({
+    Sum: (float64) 0.05411227041443803,
+    char: (string) "",
+    Next: ([]*main.Node) (len=4 cap=4) {
+     (*main.Node)(0xc820010bd0)({
+      Sum: (float64) 0.012074349417369127,
+      char: (string) (len=1) "b",
+      Next: ([]*main.Node) <nil>
+     }),
+     (*main.Node)(0xc820010cc0)({
+      Sum: (float64) 0.013601881482380312,
+      char: (string) (len=1) "\n",
+      Next: ([]*main.Node) <nil>
+     }),
+     (*main.Node)(0xc820010d80)({
+      Sum: (float64) 0.01415512456760802,
+      char: (string) (len=1) "w",
+      Next: ([]*main.Node) <nil>
+     }),
+     (*main.Node)(0xc820010780)({
+      Sum: (float64) 0.014280914947080569,
+      char: (string) (len=1) "y",
+      Next: ([]*main.Node) <nil>
+     })
+    }
+   })
+  }
+ }),
+ (*main.Node)(0xc8200108d0)({
+  Sum: (float64) 0.16280181959192022,
+  char: (string) (len=1) " ",
+  Next: ([]*main.Node) <nil>
+ })
+}
+
+9.0372571e+07
