@@ -74,8 +74,13 @@ func main(){
 	}
 	for i := range priority_branch{
 		priority_branch[i].Sum = priority_branch[i].Sum/summed
+		//fmt.Println(priority_branch[i])
 	}
 	heap.Init(&priority_branch)
+	sort.Sort(&priority_branch)
+	//for _, v := range priority_branch{
+	//	fmt.Println(v)
+	//}
 	//fmt.Println(priority_branch)
 	for len(priority_branch) > nodesize{
 		newnode := make([]*Node, 0, nodesize)
@@ -90,11 +95,11 @@ func main(){
 		sort.Sort(&priority_branch)
 	}
 	//fmt.Println(summed)
-	getChar(priority_branch)
-	/*printmapping(priority_branch, func(n Node) bool {
+	//getChar(priority_branch)
+	printmapping(priority_branch, func(n Node) bool {
 		return n.Char == ""
 		}, "")
-	*/
+
 }
 
 func printmapping(n NodeTree, f func(Node) bool, prefix string) {
